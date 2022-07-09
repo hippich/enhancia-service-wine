@@ -1,0 +1,8 @@
+Patched version of Enhancia_Service.exe service executable from Enhancia Neovo Dashboard with hardcoded COM4 port to run under Wine
+
+
+- Make sure COM4 is pointing to /dev/ttyACM0 in wine (ln -s /dev/ttyACM0 ~/.wine/dosdevices/com4)
+- Make sure current user has access to /dev/ttyACM0
+- Copy/Replace Enhancia_Service.exe to ~/.wine/drive_c/Program\ Files\ \(x86\)/Enhancia/Enhancia_Service_Reader/Enhancia_Service.exe
+- Kill running wine server - wineserver -k
+- Start Enhancia Plume plugin or Enhancia Neovo Dashboard
